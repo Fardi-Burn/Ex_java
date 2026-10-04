@@ -1,0 +1,84 @@
+Unidad 0 Ejercicios
+
+    1. Convertir una tarea cotidiana en algoritmo
+
+    2. Detectar instruccines ambiguas
+
+A. Hacer algo con el resultado.
+B. Multiplicar el resultado por 10.
+C. Preparar los datos correctamente.
+D. Mostrar el valor obtenido por pantalla.
+
+B y D son lo suficientemente precisas.
+A y C no lo son porque no especifican que hay que hacer con el resultado y C directamente no tiene sentido porque la palabra Preparar no da suficiente informacion.
+Asi las reescribiria:
+Guardarnos el resultado.
+Parsear los datos.
+
+    3. Ordenar un procedimiento.
+El orden seria:
+1. Leer la cantidad de dias.
+2. Multiplicar el numero de horas.
+3. Guardarnosel resultado de la operacoin.
+4. Mostrar el numero de horas.
+
+    4. Del nombre de la clase al nombre del archivo.
+ControlAcceso.java
+RegistroDiario.java
+LanzadorApp.java
+MenuPrincipal.java
+Si el nombre del archivo no coincidiera el compilador tiraria un error impidiendo compilacion.
+
+    5. Recostruir un programa.
+
+public class MensajeSistema
+{
+    public static void main(String []args)
+    {
+        System.out.println("Entorno disponible");
+    }
+}
+
+    6. Predecir la salida.
+Prepara proyecto
+Compilar fuentes
+Ejecutar aplicación
+Revisar resultado
+
+    7. Localizar errores de sintaxis.
+El error esta en la primera linea del main en la palabra System que esta en minuscula y en
+la sigueinte que falta cerra el parentesis de la funion println y el ;.
+
+    8. Error tecnico o error logico.
+1. Si se puede compilar ya que no parece haber ningun error.
+2. Mostrara un 14.
+3. Una multiplicacion con el simbolo *.
+4. De logica.
+
+    9. Mejorar la legibilidad.
+
+public class Estado
+{
+    public static void main(String[] args)
+    {
+        System.out.println("Inicio");System.out.println("Listo");
+    }
+}
+
+    10, Comentarios con informacion util.
+
+// Clase para Iniciar sesion en el laboratorio de programacion.
+public class ConsolaPractica
+{
+
+    // Funcion main esta se ejecutara de arriba a bajo en cascada.
+    public static void main(String[] args)
+    {
+        System.out.println("Laboratorio de programación");
+        System.out.println("Sesión iniciada");
+    }
+}
+
+En el primer comentario explico la funcion de la clase y en la segundo remarco como funciona una funcion.
+
+    11. Crear una pantalla de bienvenida propia.
