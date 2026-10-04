@@ -1,0 +1,15 @@
+    2.2.7 Detectar la asignacion incorrecta.
+la asignacin incorrecta es la de "unidades = 4;" porque le indicamos directamente que es 4 sobreescrubiendo el valor anterior.
+
+    2.2.8 Elegir el tipo.
+número de ventanas de un edificio; = int porque no podemos tener media ventana.
+distancia recorrida en kilómetros con decimales; = double porque necesitamos decimales
+número total de reproducciones de una plataforma con miles de millones de accesos; = long porque puede que supere el valor de un int.
+cantidad de alumnos presentes; = int no podemos tener alumnos partidos o una gran cantidad.
+peso de un paquete; = double porque puede tener decimales.
+número de mensajes recibidos. = int ya que no deberian de tener una gran cantidad y no debe tener decimales.
+
+    2.2.9 Numero legible.
+25_000_000
+8_400_000_000
+175_000_000_000
