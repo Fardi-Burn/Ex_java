@@ -95,13 +95,20 @@ public class BlackPearl
 		System.out.println("-".repeat(80));
 
 		//////////////////////////// Account summary
-		System.err.printf("%s Accounting Summary %s\n\n", "=".repeat(40), "=".repeat(40));
-		System.out.printf("%s %d")
-
-
-
-
-		scan.close();
+		System.err.printf("%-24s Accounting Summary %s\n\n", "=".repeat(40), "=".repeat(40));
+		System.out.printf("%-24s %10d%n", "Total of doubloons", totalDobloons);
+		System.out.printf("%-24s %10.2f%n", "Total Value of doubloons", totalDobloons_value);
+		System.out.printf("%-24s %10.2f%n", "Value of rum", totalRum_value);
+		System.out.printf("%-24s %10.2f%n", "Value of maps", totalMap_value);
+		System.out.printf("%s%n", "-".repeat(80));
+		System.out.printf("%-24s %10.2f%n%n", "TOTAL VALUE", totalDobloons_value + totalMap_value + totalRum_value);
+		System.out.printf("%-24s %10d%n", "Crew members" ,n_crewMembers);
+		System.out.printf("%-24s %10d%n", "Doubloons per pirate" ,doubloon_pirate);
+		System.out.printf("%-24s %10d%n", "Spare doubloons", doubloon_spare);
+		
+		/////////////////////////// More prints
+		System.out.printf("\"C:\\Users\\rardmun2709\\Downloads>\"");
+		System.out.printf("⚓%n");
 		return ;
 	}
 	
