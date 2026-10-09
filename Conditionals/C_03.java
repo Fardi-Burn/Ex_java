@@ -14,6 +14,7 @@ public class C_03
 			System.out.println("Temperatura negativa");
 		else
 			System.out.println("Temperatura cero");
+		input.close();
 		return ;
 	}	
 }

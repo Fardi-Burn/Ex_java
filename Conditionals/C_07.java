@@ -10,6 +10,7 @@ public class C_07
 
 		if (humidity >= 30 && humidity <= 70)
 			System.out.println("Good humidity levels");
+		input.close();
 		return ;
 	}	
 }

@@ -10,6 +10,7 @@ public class C_08
 
 		if (temp < -40 || temp > 85)
 			System.out.println("Out of service");
+		input.close();
 		return ;
 	}	
 }

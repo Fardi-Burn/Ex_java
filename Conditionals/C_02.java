@@ -11,6 +11,7 @@ public class C_02
 
 		if (n % 4 == 0)
 			System.out.println("Es divisible");
+		input.close();
 		return ;
 	}	
 }

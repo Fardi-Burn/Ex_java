@@ -18,6 +18,7 @@ public class C_06
 			System.out.println("Battery levels critic");
 		else if (battery < 0)
 			System.out.println("Battery levels negative");
+		input.close();
 		return ;
 	}	
 }

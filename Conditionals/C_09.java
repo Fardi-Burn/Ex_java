@@ -17,7 +17,7 @@ public class C_09
 			System.out.println("You can go");
 		else
 			System.out.println("You cant go in");
+		input.close();
 		return ;
-	}	
-	
+	}		
 }

@@ -12,6 +12,7 @@ public class C_04
 			System.out.println("Aforo correcto");
 		else
 			System.out.println("Aforo excedido");
+		input.close();
 		return ;
 	}	
 }
