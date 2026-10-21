@@ -7,6 +7,8 @@ public class Store
 		String	Name;
 		double	Price;
 		int		Num;
+		double	Total;
+		double	Discount;
 	}
 	static class client
 	{
@@ -73,8 +75,13 @@ public class Store
 			}
 		}
 
+		p.Total = p.Price * p.Num;
 		//  cliente
-		client	cli;
+		client	cli = new client();
+		client_type(cli, input);
+		p.Discount = Discount_calc(p.Total);
+		p.Discount =+ Discount_client(cli);
+		
 
 		
 		return ;
@@ -83,6 +90,17 @@ public class Store
 
 
 
+	static public double Discount_calc(double TotalPrice)
+	{
+		if (TotalPrice < 100)
+			return (0);
+		else if (TotalPrice < 300)
+			return (0.05);
+		else if (TotalPrice < 500)
+			return (0.08);
+		else
+			return (0.1);
+	}
 
 	static public void client_type(client cli, Scanner input)
 	{
