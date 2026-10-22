@@ -107,6 +107,9 @@ public class Store
 
 		// Gastos envio
 		p.Shipping_cost = ShippingCost_calc(cli, p);
+		p.SubTotal = p.SubTotal + p.Shipping_cost;
+		System.out.printf("%.2f", p.SubTotal);
+		System.out.println();
 		// Clasificacion compra
 		cli.Tier_Buy = Tier_Buy_calc(p);
 		// Ticket
@@ -165,19 +168,19 @@ public class Store
 				vert, p.Total, vert);
 
 		System.out.printf("%c Dto. por importe         %17.2f € %c%n",
-				vert, p.Discount_r * p.Price, vert);
+				vert, p.Discount_r * p.Total, vert);
 
 		System.out.printf("%c Dto. cliente             %17.2f € %c%n",
-				vert, p.Discount_c * p.Price, vert);
+				vert, p.Discount_c * p.Total, vert);
 
 		System.out.printf("%c Dto. forma de pago       %17.2f € %c%n",
-				vert, p.Discount_p * p.Price, vert);
+				vert, p.Discount_p * p.Total, vert);
 
 		System.out.printf("%c Descuento calculado      %17.2f € %c%n",
-				vert, p.Sum_Discount, vert);
+				vert,  (p.Total * p.Discount_c) + (p.Total * p.Discount_p) + (p.Total * p.Discount_r), vert);
 
 		System.out.printf("%c Descuento aplicado       %17.2f € %c%n",
-				vert, p.Sum_Discount, vert);
+				vert, p.Sum_Discount * p.Total, vert);
 
 		System.out.printf("%c Gastos de envío          %17.2f € %c%n",
 				vert, p.Shipping_cost, vert);
