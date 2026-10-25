@@ -27,6 +27,7 @@ public class ContabilidadProductos
 			System.out.printf("Precio(double) producto: ");
 			arr[i].precio = Double.parseDouble(input.nextLine());
 			arr[i].importe = arr[i].cantidad * arr[i].precio;
+			i++;
 		}
 
 		tickets_table(arr_l, arr);
@@ -37,13 +38,13 @@ public class ContabilidadProductos
 	{
 		int	i = 0;
 		int	length = 50;
-
+		
 		System.out.println("-".repeat(length));
 		System.out.printf("%-20s %-8s %-12s %-14s%n", "Producto", "Cant.", "Precio/u", "Importe");
 		System.out.println("-".repeat(length));
 		while (i < arr_l)
 		{
-			System.out.printf("%-20s %-8s %-12s %-14s%n", arr[i]);
+			System.out.printf("%-20s %-8s %-12s %-14s%n", arr[i].producto, arr[i].cantidad, arr[i].precio, arr[i].importe);
 			i++;
 		}
 		return ;
