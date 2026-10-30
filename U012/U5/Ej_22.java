@@ -6,7 +6,7 @@ public class Ej_22
 	{
 		Scanner input = new Scanner(System.in);
 		int	num[] = new int[6];
-		int bigger = 0;
+		int bigger;
 		
 		for (int i = 0; i < 6; i++)
 		{
