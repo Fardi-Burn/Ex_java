@@ -9,11 +9,13 @@ public class Ej_45
 		int a = Integer.parseInt(input.nextLine());
 		int b = Integer.parseInt(input.nextLine());
 
-		int resto = a % b;
-		a = b;
-		b = resto;
+		while (b != 0)
+		{
+			int resto = a % b;
+			a = b;
+			b = resto;
+		}
 
-		System.out.println();
-
+		System.out.println(a);
 	}
 }
