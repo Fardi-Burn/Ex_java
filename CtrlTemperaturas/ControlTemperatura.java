@@ -72,16 +72,18 @@ public class ControlTemperatura
 		{
 			System.out.println("Umbral de valor: ");
 			int		amount = 0;
+			double	total = 0;
 			double	umbral = Double.parseDouble(input.nextLine());
 			for (int i = 0; i < t_class.temps.size(); i++)
 			{
 				if (t_class.temps.get(i) > umbral)
 				{
-					System.out.println(t_class.temps.get(i));
+					total += t_class.temps.get(i);
 					amount++;
 				}
 			}
 			System.out.println("Cantidad de temperaturas superiores: " + amount);
+			System.out.println("Media de temperaturas: " + (total / amount));
 		}
 		catch (Exception e)
 		{
