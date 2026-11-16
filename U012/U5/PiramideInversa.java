@@ -66,22 +66,33 @@ public class PiramideInversa
 
 		// Piramide inversa vacia
 
-		for (int i = 0; i < height; i++)
+		// for (int i = 0; i < height; i++)
+		// {
+		// 	if (i == 0)
+		// 		System.out.print("*".repeat(height));
+		// 	else if (i == height - 1)
+		// 	{
+		// 		System.out.print(" ".repeat(i));
+		// 		System.out.print("*".repeat(1));
+		// 	}
+		// 	else
+		// 	{
+		// 		System.out.print(" ".repeat(i));
+		// 		System.out.print("*".repeat(1));
+		// 		System.out.print(" ".repeat(height - i - 2));
+		// 		System.out.print("*".repeat(1));
+		// 	}
+		// 	System.out.println();
+		// }
+
+		// Piramide numeros con *
+
+		for (int i = 1; i <= height; i++)
 		{
-			if (i == 0)
-				System.out.print("*".repeat(height));
-			else if (i == height - 1)
-			{
-				System.out.print(" ".repeat(i));
-				System.out.print("*".repeat(1));
-			}
-			else
-			{
-				System.out.print(" ".repeat(i));
-				System.out.print("*".repeat(1));
-				System.out.print(" ".repeat(height - i - 2));
-				System.out.print("*".repeat(1));
-			}
+			for (int j = 1; j <= i; j++)
+				System.out.print(i);
+			for (int x = i; x < height; x++)
+				System.out.print('*');
 			System.out.println();
 		}
 		
